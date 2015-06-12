@@ -11,9 +11,9 @@ $(document).ready(function(){
             'row1' : ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1']
   };
   
-  $.each(rows, function(index, key, value){
+  $.each(rows, function(key, value){
       
-        console.log(index, value);
+        console.log(key, value);
       
   });
   
