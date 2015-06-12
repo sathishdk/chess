@@ -11,8 +11,8 @@ $(document).ready(function(){
             'row1' : ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1']
   };
   
-  $.each(rows, function(key, value){
-    console.log(key, value);
+  $.each(rows, function(index, key, value){
+    console.log(index, key, value);
   });
   
   function addRows(num){
