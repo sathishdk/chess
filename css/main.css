@@ -11,7 +11,7 @@ body{
 .container{
   margin-top: 20px;
 }
-.col-md-1.none{
+.col-md-1.undefined{
   border: none;
   background-color: #fff;
 }
