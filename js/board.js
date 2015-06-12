@@ -10,7 +10,7 @@ $(document).ready(function(){
   var row1 = ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1'];
   
   (function(){
-    for (var i=0; i<9; i++){
+    for (var i=-2; i<10; i++){
       if(i%2 === 0){
        $('.row8').append( "<div class='col-md-1 " + row8[i] + "'></div>" );  
       }
