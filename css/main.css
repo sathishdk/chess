@@ -11,6 +11,10 @@ body{
 .container{
   margin-top: 20px;
 }
+.col-md-1.none{
+  border: none;
+  background-color: #fff;
+}
 .col-md-1, .col-md-1.black{
   height:60px;
   border: 1px solid #444;
