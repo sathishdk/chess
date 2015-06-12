@@ -9,8 +9,15 @@ $(document).ready(function(){
   var row2 = ['a2', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2'];
   var row1 = ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1'];
   
-  function addRow8(){
-    console.log("hello");
-  }
+  (function(){
+    for (var i=0; i<9; i++){
+      if(i%2 === 0){
+       $('.row8').append( "<div class='col-md-1 " + row8[i] + "'></div>" );  
+      }
+      else{
+        $('.row8').append( "<div class='col-md-1 black " + row8[i] + "'></div>" ); 
+      }
+    }
+  }();
   
 });
