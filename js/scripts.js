@@ -4,6 +4,8 @@ $(document).ready(function(){
             'b': [ "a7", "b7", "c7" ],
           };
   $.each( x, function( key, value ) {
-    console.log( value );
+    for (key in obj){
+      console.log("Value: " + obj[key]);
+    }
   });
 });
