@@ -12,7 +12,7 @@ $(document).ready(function(){
   };
   
   $.each(rows, function(key, value){
-    console.log(rows[key]);
+    console.log(key, value);
   });
   
   function addRows(num){
