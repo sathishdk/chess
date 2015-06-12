@@ -13,7 +13,7 @@ $(document).ready(function(){
   
   $.each(rows, function(index, key, value){
       
-        console.log(index, key);
+        console.log(index, rows[key]);
       
   });
   
