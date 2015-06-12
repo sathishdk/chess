@@ -17,28 +17,4 @@ $(document).ready(function(){
       
   });
   
-  function addRows(num){
-    
-    if (num%2 === 0){
-      for (var i=-2; i<10; i++){
-        if(i%2 === 0){
-         $('.row8').append( "<div class='col-md-1 " + row8[i] + "'></div>" );  
-        }
-        else{
-          $('.row8').append( "<div class='col-md-1 black " + row8[i] + "'></div>" ); 
-        }
-      }
-    }
-    else{
-      for (var i=-2; i<10; i++){
-        if(i%2 === 0){
-          $('.row8').append( "<div class='col-md-1 black " + row8[i] + "'></div>" ); 
-        }
-        else{
-          $('.row8').append( "<div class='col-md-1 " + row8[i] + "'></div>" );
-        }
-      }
-    }
-  }
-  
 });
