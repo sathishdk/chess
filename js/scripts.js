@@ -18,6 +18,6 @@ $(document).ready(function(){
         $('.row8').append( "<div class='col-md-1 black " + row8[i] + "'></div>" ); 
       }
     }
-  }();
+  }());
   
 });
