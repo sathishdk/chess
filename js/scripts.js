@@ -4,6 +4,6 @@ $(document).ready(function(){
             'b': { "a7", "b7", "c7" },
           ];
   $.each( x, function( index, value ) {
-    console.log( "value", value );
+    console.log( "b value", b.value );
   });
 });
