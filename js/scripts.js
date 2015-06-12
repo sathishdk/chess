@@ -5,7 +5,7 @@ $(document).ready(function(){
           };
   $.each( x, function( key, value ) {
     for (key in x){
-      console.log("Value: " + obj[key]);
+      console.log("Value: " + x[key]);
     }
   });
 });
