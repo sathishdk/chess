@@ -11,3 +11,11 @@ body{
 .container{
   margin-top: 20px;
 }
+.col-md-1{
+  border: 1px solid #444;
+  background-color: #fff;
+}
+.col-md-1.black{
+  border: 1px solid #444;
+  background-color: #000;
+}
