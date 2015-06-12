@@ -12,7 +12,14 @@ $(document).ready(function(){
   };
   
   $.each(rows, function(index, key, value){
-    console.log(index, key, value);
+      
+        if(index%2 === 0){
+         $('.row8').append( "<div class='col-md-1 " + value + "'></div>" );  
+        }
+        else{
+          $('.row8').append( "<div class='col-md-1 black " + value + "'></div>" ); 
+        }
+      
   });
   
   function addRows(num){
