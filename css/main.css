@@ -11,6 +11,11 @@ body{
 .container{
   margin-top: 20px;
 }
+h1{
+  text-align: center;
+  border-top: 1px dotted #555;
+  border-bottom: 1px dotted #555;
+}
 .col-md-1.none{
   border: none;
   background-color: #fff;
