@@ -13,7 +13,7 @@ body{
 }
 .col-md-1.undefined{
   border: none;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .col-md-1, .col-md-1.black{
   height:75px;
