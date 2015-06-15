@@ -20,54 +20,32 @@ $(document).ready(function(){
 		  table.push("<div class='row " + key + "'>");
 		  
 		  $.each(value, function(index, value1){
+				var black = (index%2 === 0) ? '' : ' black';
+				var blackRev = (index%2 === 0) ? ' black' : '' ;
 				switch(key){
-					case "row8":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+					case "row8":						
+						table.push("<div class='col-md-1 " + value1 + black + "'></div>");
 						break;
 					case "row7":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						table.push("<div class='col-md-1 " + value1 + blackRev + "'></div>");
 						break;
 					case "row6":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						table.push("<div class='col-md-1 " + value1 + black + "'></div>");
 						break;
 					case "row5":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						table.push("<div class='col-md-1 " + value1 + blackRev + "'></div>");
 						break;
 					case "row4":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						table.push("<div class='col-md-1 " + value1 + black + "'></div>");
 						break;
 					case "row3":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						table.push("<div class='col-md-1 " + value1 + blackRev + "'></div>");
 						break;
 					case "row2":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						table.push("<div class='col-md-1 " + value1 + black + "'></div>");
 						break;
 					case "row1":
-						if (index%2 === 0) 
-							table.push("<div class='col-md-1 " + value1 + " black'></div>");
-						else
-							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						table.push("<div class='col-md-1 " + value1 + blackRev + "'></div>");
 						break;
 					default:
 						console.log("Nothing");
