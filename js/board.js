@@ -11,47 +11,77 @@ $(document).ready(function(){
             'row1' : ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1']
   };
   
-  function createChessBoard(){
-    var table = [], maxRows = 8, cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
-    
-    for (var i = cols.length; i > 0; i--){
-      table.push("<div class='row row" + i + "'>");
-      for(var j = cols.length-1; j >= 0; j--){
-        var jR = j+1;
-        if(i%2 === 0){
-          if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + jR + "'></div>");
-          }
-          else{
-            table.push("<div class='col-md-1 " + cols[j] + jR + " black'></div>");
-          } 
-        }
-        else {
-          if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + jR + " black'></div>");
-          }
-          else{
-            table.push("<div class='col-md-1 " + cols[j] + jR + "'></div>");
-          } 
-        }
-      }
-      table.push("</div>");
-    }
-    
-    document.getElementById("board").innerHTML = table.join("");
-    
-  }
+  var table = [], maxRows = 8;
   
-  createChessBoard();
+  function createBoard(){
+	
+	  $.each(rows, function(key, value){
+		  
+		  table.push("<div class='row " + key + "'>");
+		  
+		  $.each(value, function(index, value1){
+				switch(key){
+					case "row8":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						break;
+					case "row7":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						break;
+					case "row6":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						break;
+					case "row5":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						break;
+					case "row4":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						break;
+					case "row3":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						break;
+					case "row2":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						break;
+					case "row1":
+						if (index%2 === 0) 
+							table.push("<div class='col-md-1 " + value1 + " black'></div>");
+						else
+							table.push("<div class='col-md-1 " + value1 + "'></div>");
+						break;
+					default:
+						console.log("Nothing");
+						break;
+				}
+			});
+		
+		  table.push("</div>");
+		  
+	  });
+	  
+	  document.getElementById('board').innerHTML = table.join("");
   
-  /* $.each(rows, function(key, value){
-      
-        $.each(value, function(index, value1){
-          
-          console.log(value1);
-          
-        });
-      
-  }); */
+  }  
   
+  createBoard();
 });
