@@ -9,7 +9,6 @@ body{
   font-family: 'Roboto Slab', serif;
 }
 .container{
-  margin-top: 20px;
 }
 .col-md-1.undefined, .col-md-1.black.undefined{
   border: none;
