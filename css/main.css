@@ -10,6 +10,10 @@ body{
 }
 .container{
 }
+.h1, .h2, .h3, .h4, .h5, .h6{
+  margin: 0px;
+  padding: 0px;
+}
 .col-md-1.undefined, .col-md-1.black.undefined{
   border: none;
   background-color: #fff !important;
