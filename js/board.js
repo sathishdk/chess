@@ -19,10 +19,10 @@ $(document).ready(function(){
       for(var j = maxRows; j > 0; j--){
         console.log(j);
           if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + j + "'>");
+            table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
           }
           else{
-            table.push("<div class='col-md-1 " + cols[j] + j + " black'>");
+            table.push("<div class='col-md-1 " + cols[j] + j + " black'></div>");
           } 
           
       }
