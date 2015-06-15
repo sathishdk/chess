@@ -19,7 +19,7 @@ $(document).ready(function(){
       table.push("</div>");
     }
     
-    document.getElementById("board").innerHTML = table.append("");
+    document.getElementById("board").innerHTML = table.join("");
     
   }
   
