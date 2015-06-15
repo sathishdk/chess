@@ -15,7 +15,7 @@ $(document).ready(function(){
       
         $.each(value, function(index, value1){
           
-          
+          console.log(value1);
           
         });
       
