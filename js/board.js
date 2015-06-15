@@ -12,12 +12,12 @@ $(document).ready(function(){
   };
   
   function createChessBoard(){
-    var table = [], maxRows = 7, cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+    var table = [], maxRows = 8, cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
     
-    for (var i = maxRows; i >= 0; i--){
+    for (var i = cols.length; i >= 0; i--){
       var iR = i+1;
       table.push("<div class='row row" + iR + "'>");
-      for(var j = maxRows; j >= 0; j--){
+      for(var j = cols.length; j >= 0; j--){
         var jR = j+1;
         if(i%2 === 0){
           if(j%2 === 0){
