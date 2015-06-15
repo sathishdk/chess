@@ -15,24 +15,22 @@ $(document).ready(function(){
     var table = [], maxRows = 8, cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
     
     for (var i = cols.length; i >= 0; i--){
-      var iR = i+1;
-      table.push("<div class='row row" + iR + "'>");
+      table.push("<div class='row row" + i + "'>");
       for(var j = cols.length; j >= 0; j--){
-        var jR = j+1;
         if(i%2 === 0){
           if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + jR + "'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
           }
           else{
-            table.push("<div class='col-md-1 " + cols[j] + jR + " black'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + j + " black'></div>");
           } 
         }
         else {
           if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + jR + " black'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + j + " black'></div>");
           }
           else{
-            table.push("<div class='col-md-1 " + cols[j] + jR + "'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
           } 
         }
       }
