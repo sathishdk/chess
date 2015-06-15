@@ -16,7 +16,7 @@ $(document).ready(function(){
     
     for (var i = cols.length; i > 0; i--){
       table.push("<div class='row row" + i + "'>");
-      for(var j = cols.length; j > 0; j--){
+      for(var j = cols.length-1; j > 0; j--){
         if(i%2 === 0){
           if(j%2 === 0){
             table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
