@@ -27,6 +27,7 @@ body{
 }
 .rulesInfo{
   background-color: rgba(0,0,0,0.75);
+  display:none;
 }
 .rulesInfo .col-md-6{
   background-color: #fff;
