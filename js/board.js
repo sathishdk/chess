@@ -15,7 +15,8 @@ $(document).ready(function(){
     var table = [], maxRows = 8;
     
     for (var i = maxRows; i > 0; i--){
-      console.log("row" + i);
+      table.push("<div class='row row" + i + "'>");
+      table.push("</div>");
     }
   }
   
