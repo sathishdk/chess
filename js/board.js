@@ -17,7 +17,7 @@ $(document).ready(function(){
     for (var i = maxRows; i > 0; i--){
       table.push("<div class='row row" + i + "'>");
       for(var j = maxRows; j > 0; j--){
-        
+        console.log(j);
           if(j%2 === 0){
             table.push("<div class='col-md-1 " + cols[j] + j + "'>");
           }
