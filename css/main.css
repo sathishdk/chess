@@ -25,3 +25,9 @@ body{
 .col-md-1.black{
   background-color: #000;
 }
+.rulesInfo{
+  background-color: rgba(0,0,0,0.75);
+}
+.rulesInfo .col-md-6{
+  background-color: #fff;
+}
