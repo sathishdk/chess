@@ -14,9 +14,9 @@ $(document).ready(function(){
   function createChessBoard(){
     var table = [], maxRows = 8, cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
     
-    for (var i = cols.length; i >= 0; i--){
+    for (var i = cols.length; i > 0; i--){
       table.push("<div class='row row" + i + "'>");
-      for(var j = cols.length; j >= 0; j--){
+      for(var j = cols.length; j > 0; j--){
         if(i%2 === 0){
           if(j%2 === 0){
             table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
