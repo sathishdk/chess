@@ -17,20 +17,21 @@ $(document).ready(function(){
     for (var i = cols.length; i > 0; i--){
       table.push("<div class='row row" + i + "'>");
       for(var j = cols.length-1; j >= 0; j--){
+        var jR = j+1;
         if(i%2 === 0){
           if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + jR + "'></div>");
           }
           else{
-            table.push("<div class='col-md-1 " + cols[j] + j + " black'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + jR + " black'></div>");
           } 
         }
         else {
           if(j%2 === 0){
-            table.push("<div class='col-md-1 " + cols[j] + j + " black'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + jR + " black'></div>");
           }
           else{
-            table.push("<div class='col-md-1 " + cols[j] + j + "'></div>");
+            table.push("<div class='col-md-1 " + cols[j] + jR + "'></div>");
           } 
         }
       }
