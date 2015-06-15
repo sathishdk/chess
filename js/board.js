@@ -18,6 +18,9 @@ $(document).ready(function(){
       table.push("<div class='row row" + i + "'>");
       table.push("</div>");
     }
+    
+    console.log(table);
+    
   }
   
   createChessBoard();
